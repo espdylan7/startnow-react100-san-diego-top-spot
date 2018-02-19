@@ -10,12 +10,12 @@ export class App extends Component {
           topspots: []
       };
   }
-  // componentWillMount() {
-  //     axios
-  //     .get('https://origin-top-spots-api.herokuapp.com/api/topspots')
-  //     .then(response => response.data)
-  //     .then(topspots => this.setState({ topspots }))
-  // }
+  componentWillMount() {
+      axios
+      .get('https://origin-top-spots-api.herokuapp.com/api/topspots')
+      .then(response => response.data)
+      .then(topspots => this.setState({ topspots }))
+  }
 
   
 
